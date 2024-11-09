@@ -17,7 +17,10 @@ interface SpeedyBarChartProps {
   xAxisLabel: string
   yAxisLabel: string
   height: number
-  data: any[]
+  data: {
+    name: string
+    value: number
+  }[]
   dataKey: string
   xAxisKey: string
   fill?: string
