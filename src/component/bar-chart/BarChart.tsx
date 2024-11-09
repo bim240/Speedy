@@ -42,7 +42,6 @@ export default function SpeedyBarChart({
   tooltipConfig,
   emptyConfig,
 }: SpeedyBarChartProps) {
-  // let [barGraphData, setBarGraphData] = React.useState<any>({})
   return (
     <div style={{width: '100%'}}>
       {data?.length > 0 ? (
@@ -75,16 +74,6 @@ export default function SpeedyBarChart({
               dataKey={dataKey}
               stroke="var(--text-primary)"
               tickCount={minTickCount >= 5 ? 5 : minTickCount}
-              // tickFormatter={value =>
-              //   showDollar
-              //     ? currencyFormatter({
-              //         locale: 'en',
-              //         amount: value,
-              //         currencyDisplay: 'symbol',
-              //         notation: 'compact',
-              //       })
-              //     : value
-              // }
               label={
                 <Text
                   x={0}
@@ -108,14 +97,7 @@ export default function SpeedyBarChart({
               }
             />
 
-            <Bar
-              dataKey={dataKey}
-              name={xAxisLabel}
-              fill={fill}
-              // onMouseOver={data => {
-              //   setBarGraphData(data)
-              // }}
-            />
+            <Bar dataKey={dataKey} name={xAxisLabel} fill={fill} />
             <Tooltip
               content={({active, payload, label}) => (
                 <CustomTooltip
@@ -127,7 +109,6 @@ export default function SpeedyBarChart({
               )}
               label={tooltipConfig?.label}
               cursor={{fill: 'transparent'}}
-              // position={{x: barGraphData.x - 30, y: barGraphData.y - 40}}
             />
           </BarChart>
         </ResponsiveContainer>
