@@ -1,0 +1,18 @@
+.customTooltip {
+  border-radius: 4px;
+  background: var(--text-primary);
+  color: #fff;
+  padding: 8px 12px;
+}
+
+.tooltipLabel {
+  color: var(--white);
+  font-size: 1.07692rem;
+  font-weight: 400;
+  line-height: 1.53846rem; /* 142.857% */
+}
+
+.emptyIcon {
+  width: 30px;
+  height: 38px;
+}

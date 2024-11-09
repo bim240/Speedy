@@ -2,10 +2,10 @@ import React from 'react'
 import {useGetUserFor12Month} from '../../../../services/dashboard/dashboard.data'
 import ChartCard from '../../../../component/chart-card'
 import Skeleton from '../../../../component/skeleton'
-import SpeedyBarChart from '../../../../component/bar-chart'
 import {downloadImage} from '../../../../utils/image'
 import {EmptyState} from '../../../../component/empty-state/EmptyState'
 import {ICONS} from '../../../../assets'
+import SpeedyLineChart from '../../../../component/line-chart'
 
 export default function UserGrowth() {
   const {data, isUserLoading, isUserError} = useGetUserFor12Month()
@@ -22,7 +22,7 @@ export default function UserGrowth() {
         {isUserLoading ? (
           <Skeleton style={{height: '360px', width: '100%'}} />
         ) : (
-          <SpeedyBarChart
+          <SpeedyLineChart
             data={data || []}
             dataKey="value"
             xAxisKey="name"
