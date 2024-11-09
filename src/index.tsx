@@ -4,9 +4,9 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import {QueryClientProvider} from '@tanstack/react-query'
-import {queryClient} from './app/configs/react-query'
 import {ReactQueryDevtools} from '@tanstack/react-query-devtools'
 import {BrowserRouter} from 'react-router-dom'
+import {queryClient} from './configs/react-query'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
