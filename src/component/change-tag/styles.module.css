@@ -1,0 +1,18 @@
+.changeBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.changeBoxInc svg path {
+  fill: var(--status-success);
+}
+
+.changeBoxDesc svg path {
+  fill: var(--status-error);
+}
+
+.changeBoxNo svg path {
+  fill: var(--neutral-arch-900);
+}
