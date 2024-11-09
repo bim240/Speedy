@@ -1,0 +1,68 @@
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.538rem;
+  margin-bottom: 16px;
+}
+
+.secondary {
+  color: var(--text-primary);
+  font-size: 1.53846rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.15385rem;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: -20px;
+  z-index: 2;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.leftIconSpan,
+.rightIconSpan,
+.downloadIconSpan,
+.infoIconSpan {
+  width: 32px;
+  height: 32px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftIconSpan:hover,
+.rightIconSpan:hover,
+.downloadIconSpan:hover {
+  background-color: var(--neutral-arch-100);
+  cursor: pointer;
+}
+
+.leftIcon,
+.rightIcon,
+.downloadIcon,
+.infoIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.tooltipText {
+  color: var(--white);
+  font-size: 1rem;
+  background-color: var(--text-primary);
+  line-height: 1.4rem;
+  font-family: 500;
+}

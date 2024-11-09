@@ -32,3 +32,8 @@ export interface RevenueResponse {
   decrease_percentage: string
   change: number
 }
+
+export interface UserDataFor12Month {
+  name: string
+  value: number
+}

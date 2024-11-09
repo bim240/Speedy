@@ -7,7 +7,7 @@
 
 .box2 {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 20px;
 }
 
@@ -32,12 +32,6 @@
 @media (max-width: 1229px) {
   .box {
     grid-template-columns: 1.5fr 2fr;
-  }
-}
-
-@media (max-width: 1145px) {
-  .box2 {
-    grid-template-columns: 2fr 0.9fr;
   }
 }
 

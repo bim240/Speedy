@@ -1,0 +1,17 @@
+.box {
+  border-radius: 8px;
+  background: var(--neutral-white);
+
+  padding: 20px;
+  /* height: 100%; */
+}
+.box.border {
+  border: 1px solid #f1f1f1;
+}
+
+.heading {
+  color: var(--text-secondary);
+  font-size: 1.231rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
