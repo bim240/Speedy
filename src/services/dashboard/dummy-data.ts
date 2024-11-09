@@ -4,6 +4,7 @@ import type {
   StreamUserResponse,
   TopArtistOfMonthResponse,
   TotalUserResponse,
+  UserDataFor12Month,
 } from '../../types/dashboard.type'
 
 export const totalUserData: TotalUserResponse = {
@@ -40,3 +41,54 @@ export const topArtistData: TopArtistOfMonthResponse = {
   country: 'India',
   id: '123-1234-3455',
 }
+
+export const userDataFor12Month: UserDataFor12Month[] = [
+  {
+    name: 'Dec 2023',
+    value: 200,
+  },
+  {
+    name: 'Jan 2024',
+    value: 400,
+  },
+  {
+    name: 'Feb 2024',
+    value: 500,
+  },
+  {
+    name: 'March 2024',
+    value: 600,
+  },
+  {
+    name: 'April 2024',
+    value: 700,
+  },
+  {
+    name: 'May 2024',
+    value: 800,
+  },
+  {
+    name: 'June 2024',
+    value: 700,
+  },
+  {
+    name: 'July 2024',
+    value: 800,
+  },
+  {
+    name: 'Aug 2024',
+    value: 500,
+  },
+  {
+    name: 'Sep 2024',
+    value: 600,
+  },
+  {
+    name: 'Oct 2024',
+    value: 800,
+  },
+  {
+    name: 'Nov 2024',
+    value: 500,
+  },
+]

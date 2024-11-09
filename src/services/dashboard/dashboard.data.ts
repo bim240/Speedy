@@ -43,3 +43,11 @@ export const useGetTopArtist = () => {
   })
   return {topArtistInfo: res.data, isTopArtistLoading: res.isLoading, isTopArtistError: res.isError}
 }
+
+export const useGetUserFor12Month = () => {
+  const res = useQuery({
+    queryKey: DASHBOARD_QUERIES.past12MonthUser,
+    queryFn: svc.getUserDataFor12Month,
+  })
+  return {data: res.data, isUserLoading: res.isLoading, isUserError: res.isError}
+}

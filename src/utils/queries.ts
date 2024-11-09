@@ -3,5 +3,6 @@ export const DASHBOARD_QUERIES = {
   activeUser: ['active-user'] as const,
   streamUser: ['stream-user'] as const,
   revenue: ['revenue'] as const,
-  topArtistOfMonth: ['top-artist-of_month'] as const,
+  topArtistOfMonth: ['top-artist-of-month'] as const,
+  past12MonthUser: ['past-12-month-user'] as const,
 }

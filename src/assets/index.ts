@@ -5,13 +5,15 @@ import user3 from './user/users-3.svg'
 import minus from '../assets/math/minus.svg'
 import trendUp from '../assets/charts/trend-up.svg'
 import trendDown from '../assets/charts/trend-down.svg'
+import arrowCollapseDown from './arrow/arrow-collapse-down.svg'
 
 export const ICONS = {
-  minus: minus,
-  trendUp: trendUp,
-  trendDown: trendDown,
-  user2: user2,
-  user3: user3,
-  users: users,
-  user: user,
+  minus,
+  trendUp,
+  trendDown,
+  user2,
+  user3,
+  users,
+  user,
+  arrowCollapseDown,
 }
