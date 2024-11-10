@@ -1,3 +1,4 @@
+import {format} from 'date-fns'
 import type {
   ActiveUserResponse,
   RevenueResponse,
@@ -306,3 +307,54 @@ export const songList: SongListResponse[] = [
     id: '11',
   },
 ]
+
+export const songTableFilter = {
+  header: [],
+  drawer: [
+    {
+      id: 'name',
+      name: 'Type',
+      key: 'filter_song_name',
+      options: [
+        {
+          name: 'Tere liye',
+          value: '1a6c4a2d-2c03-4e19-8f25-8e8c2e09a562',
+        },
+      ],
+      config: {
+        hideSearch: false,
+        placeholder: 'Search for song name',
+      },
+    },
+    {
+      id: 'artist_name',
+      name: 'Artist Name',
+      key: 'filter_name',
+      options: [
+        {
+          name: 'Arijit singh',
+          value: 'f76e669c-78b0-4b7b-93a5-37a5bfa4d29c',
+        },
+      ],
+      config: {
+        hideSearch: true,
+        placeholder: 'Search artist',
+      },
+    },
+    {
+      id: 'date_streamed',
+      name: 'Streamed Date',
+      key: 'filter_date_streamed',
+      options: [
+        {
+          value: 'abdadf28-76e0-412e-ad18-068dfbe43ec9',
+          name: format(new Date(), 'dd/MM/yyyy'),
+        },
+      ],
+      config: {
+        hideSearch: false,
+        placeholder: 'Search by date',
+      },
+    },
+  ],
+}

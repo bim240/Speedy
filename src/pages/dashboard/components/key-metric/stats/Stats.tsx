@@ -63,10 +63,10 @@ export default function Stats() {
   ]
   return (
     <div className={classes.box}>
-      {stats.map(stat => {
+      {stats.map((stat, idx) => {
         if (!stat.data && !stat.isLoading && !stat.isError) {
           return (
-            <div className={classes.emptyBox} key={stat.dataKey}>
+            <div className={classes.emptyBox} key={`${stat.dataKey}${idx} empty`}>
               <EmptyState
                 icon={stat.icon}
                 title={stat.emptyLabel}
@@ -79,7 +79,7 @@ export default function Stats() {
 
         if (!stat.data) {
           return (
-            <div className={classes.emptyBox} key={stat.dataKey}>
+            <div className={classes.emptyBox} key={`${stat.dataKey}${idx}no-data`}>
               <EmptyState
                 icon={stat.icon}
                 title={stat.emptyLabel}
@@ -91,7 +91,7 @@ export default function Stats() {
         }
 
         return (
-          <div className={clsx(classes.stat)} key={stat.dataKey}>
+          <div className={clsx(classes.stat)} key={`${stat.dataKey}${idx}with data`}>
             <div className={classes.statInner}>
               <div className={classes.statInner2}>
                 <p className={classes.statVal}>

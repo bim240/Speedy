@@ -1,10 +1,11 @@
 import React from 'react'
-import {songInitialQueries, useSongStore} from '../../../../store/dashboard.store'
+import {useSongStore} from '../../../../store/dashboard.store'
 import {TABLE_ACTION_TYPES} from '../../../../utils/enum'
 import {useSongList} from '../../../../services/dashboard/dashboard.data'
 import classes from './styles.module.css'
 import {Table} from '@hybr1d-tech/charizard'
 import {format} from 'date-fns'
+import {songTableFilter} from '../../../../services/dashboard/dummy-data'
 
 const columns = [
   {
@@ -50,7 +51,7 @@ export default function SongTable() {
         filterConfig={{
           isLoading: false,
           isError: false,
-          filters: {},
+          filters: songTableFilter,
           filterDispatch: value => dispatch({type: TABLE_ACTION_TYPES.FILTER, payload: value}),
           filterReset: () => dispatch({type: TABLE_ACTION_TYPES.RESET_FILTERS, payload: null}),
         }}

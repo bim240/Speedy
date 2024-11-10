@@ -7,6 +7,7 @@ import Skeleton from '../../../../component/skeleton'
 
 export default function TopSongs() {
   const {data, isError, isLoading} = useGetTopTenSongs()
+
   return isError ? (
     <EmptyState icon={ICONS.user} title="Something went wrong" />
   ) : isLoading ? (
