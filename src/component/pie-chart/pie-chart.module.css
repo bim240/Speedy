@@ -46,13 +46,6 @@
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 1270px) {
-  /* .box {
-  } */
-}
-
-/* popover styles */
-
 .popoverBox {
   display: flex;
 }
@@ -103,4 +96,14 @@
   color: var(--text-primary);
   font-size: 1.07692rem;
   line-height: 1.53846rem; /* 142.857% */
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    flex-direction: column;
+  }
+  .chart {
+    width: 100%;
+    height: 300px;
+  }
 }
