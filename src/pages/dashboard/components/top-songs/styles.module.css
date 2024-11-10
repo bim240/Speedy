@@ -62,4 +62,7 @@
   .singleSongContainer {
     flex: 1;
   }
+  .container {
+    margin-left: 0;
+  }
 }

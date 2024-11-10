@@ -2,6 +2,7 @@ import type {
   ActiveUserResponse,
   RevenueResponse,
   SongDetails,
+  SongListResponse,
   StreamUserResponse,
   TopArtistOfMonthResponse,
   TotalUserResponse,
@@ -234,4 +235,74 @@ export const top10Songs: SongDetails[] = [
   //   url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
   //    id: '10',
   // },
+]
+
+export const songList: SongListResponse[] = [
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '1',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '2',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '3',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '4',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '5',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '6',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '7',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '8',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '9',
+  },
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '10',
+  },
+
+  {
+    name: 'Hello',
+    artist_name: 'Arijit singh',
+    date_streamed: new Date(),
+    id: '11',
+  },
 ]

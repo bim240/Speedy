@@ -55,3 +55,10 @@ export interface SongDetails {
   language: string
   id: string
 }
+
+export interface SongListResponse {
+  name: string
+  artist_name: string
+  date_streamed: Date
+  id: string
+}

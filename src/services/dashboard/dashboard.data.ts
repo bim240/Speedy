@@ -1,6 +1,7 @@
 import {useQuery} from '@tanstack/react-query'
 import {dashboardService} from './dashboard.service'
 import {DASHBOARD_QUERIES} from '../../utils/queries'
+import {SongQueries} from '../../store/dashboard.store'
 
 const svc = new dashboardService()
 
@@ -66,4 +67,21 @@ export const useGetTopTenSongs = () => {
     queryFn: svc.getTopTenSongs,
   })
   return {data: res.data, isLoading: res.isLoading, isError: res.isError}
+}
+
+export const useSongList = (query: SongQueries) => {
+  const res = useQuery({
+    queryKey: DASHBOARD_QUERIES.songList(query),
+    queryFn: () => svc.getSongList(query),
+  })
+  return {
+    data: res.data,
+    isLoading: res.isLoading,
+    isError: res.isError,
+    metaData: {
+      total_items: 10,
+      page_no: 0,
+      items_on_page: 10,
+    },
+  }
 }

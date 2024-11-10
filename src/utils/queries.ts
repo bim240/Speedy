@@ -1,3 +1,5 @@
+import type {SongQueries} from '../store/dashboard.store'
+
 export const DASHBOARD_QUERIES = {
   totalUser: ['total-user'] as const,
   activeUser: ['active-user'] as const,
@@ -7,4 +9,5 @@ export const DASHBOARD_QUERIES = {
   past12MonthUser: ['past-12-month-user'] as const,
   revenueDistribution: ['revenue-distribution'] as const,
   topTenSong: ['top-ten-songs' as const],
+  songList: (queries: SongQueries) => ['song-list', queries] as const,
 }

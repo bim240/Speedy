@@ -4,6 +4,7 @@ import KeyMetric from './components/key-metric/KeyMetric'
 import UserGrowth from './components/user-growth'
 import RevenueDistribution from './components/revenue-distribution'
 import TopSongs from './components/top-songs'
+import SongTable from './components/song-table/SongTable'
 
 export default function Dashboard() {
   return (
@@ -17,6 +18,9 @@ export default function Dashboard() {
           <RevenueDistribution />
         </div>
         <TopSongs />
+      </div>
+      <div className={classes.tableBox}>
+        <SongTable />
       </div>
     </>
   )
