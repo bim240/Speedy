@@ -1,0 +1,106 @@
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.chart {
+  width: 50%;
+  height: 300px;
+}
+
+.tooltip {
+  color: var(--white);
+  font-size: 1.08rem;
+  line-height: 1.54rem;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: var(--text-primary);
+}
+
+.tooltip .others {
+  margin-top: 5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.singleInfo {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.singleInfo2 {
+  display: flex;
+  gap: 10px;
+}
+
+.colorBox {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1270px) {
+  /* .box {
+  } */
+}
+
+/* popover styles */
+
+.popoverBox {
+  display: flex;
+}
+
+.popoverContent {
+  max-width: 220px;
+  max-height: 150px;
+  overflow-y: scroll;
+  border-radius: 4px;
+  background: var(--text-primary);
+  padding: 8px 12px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  color: #fff;
+
+  font-size: 1.07692rem;
+  line-height: 1.53846rem;
+}
+
+.infos {
+  padding: 2px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.triggerText {
+  color: var(--text-primary);
+  font-size: 1.07692rem;
+  line-height: 1.53846rem; /* 142.857% */
+}
+
+.triggerText:hover {
+  font-weight: 500;
+}
+
+.textActive {
+  text-decoration-line: underline;
+}
+
+.popoverBox [data-part='arrow'] {
+  --arrow-background: var(--text-primary);
+  --arrow-size: 16px;
+}
+
+.text {
+  color: var(--text-primary);
+  font-size: 1.07692rem;
+  line-height: 1.53846rem; /* 142.857% */
+}

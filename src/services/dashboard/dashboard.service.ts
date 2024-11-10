@@ -9,6 +9,7 @@ import type {
 import {
   activeUserData,
   revenueData,
+  revenueDistribution,
   streamUserData,
   topArtistData,
   totalUserData,
@@ -40,5 +41,9 @@ export class dashboardService {
   async getUserDataFor12Month(): Promise<UserDataFor12Month[]> {
     // make api call here
     return userDataFor12Month
+  }
+  async getRevenueDistribution(): Promise<Record<string, string | number>[]> {
+    // make api call here
+    return revenueDistribution
   }
 }

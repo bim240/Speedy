@@ -37,3 +37,8 @@ export interface UserDataFor12Month {
   name: string
   value: number
 }
+
+export interface RevenueDistribution {
+  name: string
+  value: number
+}

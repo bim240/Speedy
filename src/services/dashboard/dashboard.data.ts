@@ -51,3 +51,11 @@ export const useGetUserFor12Month = () => {
   })
   return {data: res.data, isUserLoading: res.isLoading, isUserError: res.isError}
 }
+
+export const useGetRevenueDistribution = () => {
+  const res = useQuery({
+    queryKey: DASHBOARD_QUERIES.revenueDistribution,
+    queryFn: svc.getRevenueDistribution,
+  })
+  return {data: res.data, isLoading: res.isLoading, isError: res.isError}
+}

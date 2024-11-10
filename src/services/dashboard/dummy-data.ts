@@ -92,3 +92,22 @@ export const userDataFor12Month: UserDataFor12Month[] = [
     value: 500,
   },
 ]
+
+export const revenueDistribution: Record<string, string | number>[] = [
+  {
+    name: 'Ads',
+    value: 700,
+  },
+  {
+    name: 'Subscription',
+    value: 800,
+  },
+  {
+    name: 'Royalties',
+    value: 700,
+  },
+  {
+    name: 'Downloads',
+    value: 700,
+  },
+]

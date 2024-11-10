@@ -5,4 +5,5 @@ export const DASHBOARD_QUERIES = {
   revenue: ['revenue'] as const,
   topArtistOfMonth: ['top-artist-of-month'] as const,
   past12MonthUser: ['past-12-month-user'] as const,
+  revenueDistribution: ['revenue-distribution'] as const,
 }
