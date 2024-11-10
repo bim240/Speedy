@@ -17,7 +17,12 @@ export default function TopArtist() {
         <EmptyState icon={ICONS.user} title="No top artist" />
       ) : topArtistInfo ? (
         <div className={classes.artistContainer}>
-          <img className={classes.artistImage} alt={topArtistInfo.name} src={topArtistInfo.img} />
+          <img
+            className={classes.artistImage}
+            alt={topArtistInfo.name}
+            src={topArtistInfo.img}
+            loading="eager"
+          />
           <p className={classes.artistName}>{topArtistInfo.name}</p>
           <p className={classes.artistCountry}> {topArtistInfo.country}</p>
         </div>

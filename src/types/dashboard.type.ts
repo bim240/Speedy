@@ -37,3 +37,28 @@ export interface UserDataFor12Month {
   name: string
   value: number
 }
+
+export interface RevenueDistribution {
+  name: string
+  value: number
+}
+
+export interface SongDetails {
+  artist: {
+    name: string
+    img: string
+    country: string
+    id: string
+  }
+  name: string
+  url: string
+  language: string
+  id: string
+}
+
+export interface SongListResponse {
+  name: string
+  artist_name: string
+  date_streamed: Date
+  id: string
+}
