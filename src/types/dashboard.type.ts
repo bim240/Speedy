@@ -42,3 +42,16 @@ export interface RevenueDistribution {
   name: string
   value: number
 }
+
+export interface SongDetails {
+  artist: {
+    name: string
+    img: string
+    country: string
+    id: string
+  }
+  name: string
+  url: string
+  language: string
+  id: string
+}

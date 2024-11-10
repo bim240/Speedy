@@ -59,3 +59,11 @@ export const useGetRevenueDistribution = () => {
   })
   return {data: res.data, isLoading: res.isLoading, isError: res.isError}
 }
+
+export const useGetTopTenSongs = () => {
+  const res = useQuery({
+    queryKey: DASHBOARD_QUERIES.topTenSong,
+    queryFn: svc.getTopTenSongs,
+  })
+  return {data: res.data, isLoading: res.isLoading, isError: res.isError}
+}

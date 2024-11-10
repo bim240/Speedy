@@ -1,6 +1,7 @@
 import type {
   ActiveUserResponse,
   RevenueResponse,
+  SongDetails,
   StreamUserResponse,
   TopArtistOfMonthResponse,
   TotalUserResponse,
@@ -11,6 +12,7 @@ import {
   revenueData,
   revenueDistribution,
   streamUserData,
+  top10Songs,
   topArtistData,
   totalUserData,
   userDataFor12Month,
@@ -45,5 +47,9 @@ export class dashboardService {
   async getRevenueDistribution(): Promise<Record<string, string | number>[]> {
     // make api call here
     return revenueDistribution
+  }
+  async getTopTenSongs(): Promise<SongDetails[]> {
+    // make api call here
+    return top10Songs
   }
 }

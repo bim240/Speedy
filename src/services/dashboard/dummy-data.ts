@@ -1,6 +1,7 @@
 import type {
   ActiveUserResponse,
   RevenueResponse,
+  SongDetails,
   StreamUserResponse,
   TopArtistOfMonthResponse,
   TotalUserResponse,
@@ -110,4 +111,127 @@ export const revenueDistribution: Record<string, string | number>[] = [
     name: 'Downloads',
     value: 700,
   },
+]
+
+export const top10Songs: SongDetails[] = [
+  {
+    artist: {
+      name: 'Tiger Tiger',
+      country: 'India',
+      img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+      id: '1',
+    },
+    name: 'Dil Tere naam',
+    language: 'Hindi',
+    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+    id: '1',
+  },
+  {
+    artist: {
+      name: 'Tiger Tiger',
+      country: 'India',
+      img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+      id: '2',
+    },
+    name: 'Dil Tere naam',
+    language: 'Hindi',
+    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+    id: '2',
+  },
+  {
+    artist: {
+      name: 'Tiger Tiger',
+      country: 'India',
+      img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+      id: '3',
+    },
+    name: 'Dil Tere naam',
+    language: 'Hindi',
+    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+    id: '3',
+  },
+  {
+    artist: {
+      name: 'Tiger Tiger',
+      country: 'India',
+      img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+      id: '4',
+    },
+    name: 'Dil Tere naam',
+    language: 'Hindi',
+    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+    id: '4',
+  },
+  {
+    artist: {
+      name: 'Tiger Tiger',
+      country: 'India',
+      img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+      id: '5',
+    },
+    name: 'Dil Tere naam',
+    language: 'Hindi',
+    url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+    id: '5',
+  },
+  // {
+  //   artist: {
+  //     name: 'Tiger Tiger',
+  //     country: 'India',
+  //     img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+  //     id: '6',
+  //   },
+  //   name: 'Dil Tere naam',
+  //   language: 'Hindi',
+  //   url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+  //    id: '6',
+  // },
+  // {
+  //   artist: {
+  //     name: 'Tiger Tiger',
+  //     country: 'India',
+  //     img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+  //     id: '7',
+  //   },
+  //   name: 'Dil Tere naam',
+  //   language: 'Hindi',
+  //   url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+  //    id: '7',
+  // },
+  // {
+  //   artist: {
+  //     name: 'Tiger Tiger',
+  //     country: 'India',
+  //     img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+  //     id: '8',
+  //   },
+  //   name: 'Dil Tere naam',
+  //   language: 'Hindi',
+  //   url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+  //    id: '8',
+  // },
+  // {
+  //   artist: {
+  //     name: 'Tiger Tiger',
+  //     country: 'India',
+  //     img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+  //     id: '9',
+  //   },
+  //   name: 'Dil Tere naam',
+  //   language: 'Hindi',
+  //   url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+  //    id: '9',
+  // },
+  // {
+  //   artist: {
+  //     name: 'Tiger Tiger',
+  //     country: 'India',
+  //     img: 'https://cdn.pixabay.com/photo/2024/05/01/23/57/dog-8733419_1280.png',
+  //     id: '10',
+  //   },
+  //   name: 'Dil Tere naam',
+  //   language: 'Hindi',
+  //   url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3',
+  //    id: '10',
+  // },
 ]
