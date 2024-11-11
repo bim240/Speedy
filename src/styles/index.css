@@ -144,3 +144,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@media (max-width: 550px) {
+  input {
+    width: 150px !important;
+  }
+}
