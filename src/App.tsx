@@ -13,6 +13,8 @@ function App() {
           <Route path="/home" element={<>home</>} />
           <Route path="/people" element={<>people</>} />
           <Route path="/users" element={<> users </>} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="*" element={<>page not found component to be displayed</>} />
         </Routes>
       </div>
     </NavWrapper>
