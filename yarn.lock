@@ -1487,10 +1487,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.1.tgz#9a96ce501bc62df46c4031fbd970e3cc6b10f07b"
   integrity sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==
 
-"@hybr1d-tech/charizard@^0.7.162":
-  version "0.7.162"
-  resolved "https://registry.yarnpkg.com/@hybr1d-tech/charizard/-/charizard-0.7.162.tgz#ef78c3b4216b81abf0be2447c8497d241a9df602"
-  integrity sha512-/l/EEAyF7uBHDBwA5kvv1nWPKGOBG4fQxYuExJS+/fFUlqzeslu2HVvdbp7PWQ/cUwe+OE0QZqtxGIETAQODag==
+"@hybr1d-tech/charizard@^0.7.166":
+  version "0.7.166"
+  resolved "https://registry.yarnpkg.com/@hybr1d-tech/charizard/-/charizard-0.7.166.tgz#df6c45d86e6012698ff86429c048644510e56c41"
+  integrity sha512-eSAUyxDDfV05+b5R0p5czcLOrbMJu5tByrNqQw0ycXYCNAuri4wMILWHl1nTuFN58ZNY6Ag0zUH3Gtr4yr9oPA==
 
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"

@@ -309,7 +309,18 @@ export const songList: SongListResponse[] = [
 ]
 
 export const songTableFilter = {
-  header: [],
+  header: [
+    {
+      id: 'filter_date_range',
+      name: '',
+      key: 'filter_date_range',
+      type: 'date_range',
+      options: [],
+      config: {
+        mode: 'range',
+      },
+    },
+  ],
   drawer: [
     {
       id: 'name',

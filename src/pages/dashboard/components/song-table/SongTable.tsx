@@ -29,19 +29,58 @@ const columns = [
     size: 160,
     enableSorting: true,
   },
+  {
+    accessorKey: 'date_streamed_at',
+    header: 'Date Streamed At',
+    cell: (info: any) => <></>,
+    size: 160,
+    enableSorting: true,
+  },
 ]
 
 export default function SongTable() {
   const query = useSongStore(s => s.query)
   const dispatch = useSongStore(s => s.dispatch)
 
+  const [currentColumn, setCurrentColumn] = React.useState([
+    {
+      id: 'name',
+      label: 'Name',
+      checked: true,
+    },
+    {
+      id: 'artist_name',
+      label: 'Artist Name',
+      checked: true,
+    },
+    {
+      id: 'date_streamed',
+      label: 'Date Streamed',
+      checked: true,
+    },
+  ])
+
   const {data, isError, isLoading, metaData} = useSongList(query)
+
+  const updatedColumn = React.useMemo(() => {
+    //  const data =  currentColumn.filter(column => column.checked)
+    const columnPresent = columns.filter(column => {
+      let flag = false
+      currentColumn.forEach(col => {
+        if (col.checked && column.accessorKey === col.id) {
+          flag = true
+        }
+      })
+      return flag
+    })
+    return columnPresent
+  }, [currentColumn])
 
   return (
     <>
       <Table
         data={data || []}
-        columns={columns || []}
+        columns={updatedColumn || []}
         searchConfig={{
           search: query.search,
           setSearch: (value: any) => dispatch({type: TABLE_ACTION_TYPES.SEARCH, payload: value}),
@@ -51,7 +90,7 @@ export default function SongTable() {
         filterConfig={{
           isLoading: false,
           isError: false,
-          filters: songTableFilter,
+          filters: songTableFilter as unknown as any,
           filterDispatch: value => dispatch({type: TABLE_ACTION_TYPES.FILTER, payload: value}),
           filterReset: () => dispatch({type: TABLE_ACTION_TYPES.RESET_FILTERS, payload: null}),
         }}
@@ -74,6 +113,18 @@ export default function SongTable() {
           setSortOrd: (value: any) =>
             dispatch({type: TABLE_ACTION_TYPES.SORT_ORDER, payload: value}),
           sortMap: sortByMappings,
+        }}
+        customColumnConfig={{
+          isPending: false,
+          isError: false,
+          columns: {
+            checked_state: currentColumn,
+            is_default: false,
+            table_name: 'team_list',
+          },
+          handleSaveColumns: async columns => {
+            setCurrentColumn(columns)
+          },
         }}
         tableStyleConfig={{maxHeight: 'calc(100dvh - 280px)', stickyIds: ['name']}}
       />
